@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/cajero.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-text">
+                <h1>Gestión de Vales de comida</h1>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="nav-buttons">
+                <li><a href="" class="nav-btn">Inicio</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-container">
+            <section>
+                
+                <div>
+                    <h2>Bienvenido a la sección de vales de comida. Aquí puedes gestionar tus vales de manera eficiente.</h2>
+                </div>
+                <div>
+                    <form id="form-vale">
+                        <div class="form-group">
+                            <label class="center" for="idVale">ID Vale</label>
+                            <input class="input-id-vale" type="text" id="idVale" required>
+                        </div>
+                        
+                    <button type="submit" class="btn-submit">Ingresar Vale</button>
+                    </form>
+
+
+                    <div>
+                        <h3>Vales Ingresados</h3>
+                        <table class="tabla-vales">
+                            <thead>
+                                <tr>
+                                    <th>ID Vale</th>
+                                    <th>Fecha de Ingreso</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Aquí se agregarán los vales ingresados con JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    
+                        
+                    
+                </div>
+            </section>
+        
+
+            <aside>
+                <div class="aside-container">
+                    <div>
+                    <h3>Fecha y Hora Actual</h3>
+                    </div>
+                    <div class="contenedor">
+                        <div class="widget">
+                            <div class="fecha">
+                                <p id="diaSemana" class="diaSemana"></p>
+                                <p id="dia" class="dia"></p>
+                                <p>de</p>
+                                <p id="mes" class="mes"></p>
+                                <p>del</p>
+                                <p id="anio" class="anio"></p>
+                            </div>
+                            <div class="reloj">
+                                <p id="horas" class="horas"></p>
+                                <p>:</p>
+                                <p id="minutos" class="minutos"></p>
+                                <p>:</p>
+                                <div class="cajaSegundos">
+                                    <p id="segundos" class="segundos"></p>
+                                    <p id="ampm" class="ampm"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2025 - Todos los derechos reservados</p>
+        </footer>
+    
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="./cajero.js"></script>
+    <script src="./hora.js"></script>
+    </body>
+
+</html>
